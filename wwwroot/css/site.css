@@ -59,6 +59,8 @@ header h1 {
 nav {
   background-color: #231e1e;
   padding: 1em;
+  display: flex;
+  gap: 50px;
 }
 
 nav a {

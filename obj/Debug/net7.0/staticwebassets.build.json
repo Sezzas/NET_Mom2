@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "O0aWY8iZmOdq3fMcg4JJCJDNDcV5AGk/zt72Be9TYXE=",
+  "Hash": "HPkTaEa92AxjvHle4hcuqy3xZdu5WmL1ep7yJaZgTZ4=",
   "Source": "NET_Mom2",
   "BasePath": "_content/NET_Mom2",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\ebbah\\Dropbox\\WEBBUTVECKLING-PROGRAMMET\\Kod\\Webbutveckling med .NET\\NET_Mom2\\wwwroot\\header.png",
+      "SourceId": "NET_Mom2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ebbah\\Dropbox\\WEBBUTVECKLING-PROGRAMMET\\Kod\\Webbutveckling med .NET\\NET_Mom2\\wwwroot\\",
+      "BasePath": "_content/NET_Mom2",
+      "RelativePath": "header.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\header.png"
     },
     {
       "Identity": "C:\\Users\\ebbah\\Dropbox\\WEBBUTVECKLING-PROGRAMMET\\Kod\\Webbutveckling med .NET\\NET_Mom2\\wwwroot\\js\\site.js",
