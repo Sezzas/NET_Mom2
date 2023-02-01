@@ -81,6 +81,10 @@ nav a:hover {
   background-color: white;
 }
 
+main img {
+  max-width: 400px;
+}
+
 h1, h2, h3, h4 {
   font-family: 'Fugaz One', sans-serif;
 }
@@ -90,8 +94,18 @@ h2 {
   font-size: 1.8em;
 }
 
-p {
+p, i, em, strong, b {
   font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+  color: #e53bb9;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 footer {
@@ -100,4 +114,18 @@ footer {
   color: white;
   text-align: center;
   padding: 1em;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  max-width: 500px;
+  background-color: #f9f4ec;
+  padding: 0.5em;
+  margin: 0.5em;
+  text-align: center;
 }
