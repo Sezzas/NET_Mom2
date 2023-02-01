@@ -1,22 +1,101 @@
-html {
-  font-size: 14px;
-}
+/*
+-- FÄRGKODER
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
+- Main
+#e53bb9 (pink)
+#231e1e (dark brown)
+#ffffff (white)
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
+- Secondary
+#382215 (brown)
+#e6c7aa (beige)
+#f9f4ec (cream white)
 
-html {
-  position: relative;
-  min-height: 100%;
-}
+- Extra
+#8059b8 (dark purple)
+#897cf8 (purple)
+#fcd349 (yellow)
+#cba144 (dark gold)
+#e1c26e (gold)
+#ecda9b (light yellow)
+
+
+-- FONTER
+Fugaz One (stylized)
+Noto Sans (text)
+
+*/
 
 body {
-  margin-bottom: 60px;
+  margin: 0;
+  background-color: #f9f4ec;
+}
+
+#container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header {
+  background-image: url(../header.png);
+  background-position: center;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 5em;
+  color: white;
+}
+
+nav {
+  background-color: #231e1e;
+  padding: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.2em;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #e53bb9;
+}
+
+#main-content {
+  flex-grow: 1;
+  padding: 1em 3em;
+  background-color: white;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Fugaz One', sans-serif;
+}
+
+h2 {
+  color: #e53bb9;
+  font-size: 1.8em;
+}
+
+p {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+footer {
+  font-size: 0.8em;
+  background-color: #231e1e;
+  color: white;
+  text-align: center;
+  padding: 1em;
 }
