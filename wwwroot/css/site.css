@@ -98,13 +98,13 @@ p, i, em, strong, b {
   font-family: 'Noto Sans', sans-serif;
 }
 
-a {
+#main-content a {
   color: #e53bb9;
   font-weight: bold;
   text-decoration: none;
 }
 
-a:hover {
+#main-content a:hover {
   text-decoration: underline;
 }
 
@@ -128,4 +128,58 @@ footer {
   padding: 0.5em;
   margin: 0.5em;
   text-align: center;
+}
+
+#horse-table {
+  font-family: 'Noto Sans', sans-serif;
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border-bottom: 1px #3f3d3c solid;
+}
+
+th {
+  background-color: #e53bb9;
+  color: white;
+  padding: 0.5em;
+}
+
+td {
+  padding: 1em 0.5em;
+  text-align: center;
+}
+
+form {
+  font-family: 'Noto Sans', sans-serif;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+input[type=text], input[type=number], select {
+  padding: 0.5em;
+  width: 300px;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+select {
+  width: 317px;
+}
+
+input[type=submit] {
+  padding: 0.7em;
+  background-color: #e53bb9;
+  color: white;
+  border: none;
+  font-family: 'Fugaz One', sans-serif;
+}
+
+.submit-btn {
+  align-self: flex-end;
 }

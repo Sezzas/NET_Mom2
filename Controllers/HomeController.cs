@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using NET_Mom2.Models;
+using Newtonsoft.Json;
 
 namespace NET_Mom2.Controllers;
 
@@ -27,7 +28,12 @@ public class HomeController : Controller
     [Route("/dinahästar")]
     public IActionResult Horses()
     {
-        return View();
+        // Läsa in JSON-fil
+        var jsonStr = System.IO.File.ReadAllText("horses.json");
+        // Konvertera från JSON till objekt
+        var jsonObj = JsonConvert.DeserializeObject<IEnumerable<Horses>>(jsonStr);
+
+        return View(jsonObj);
     }
 
     [Route("/anteckningar")]

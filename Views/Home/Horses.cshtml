@@ -1,3 +1,4 @@
+@model IEnumerable<NET_Mom2.Models.Horses> // Läsa in hästar
 @{
     ViewData["Title"] = "Dina hästar";
 }
@@ -5,3 +6,77 @@
 <h2>Dina hästar</h2>
 
 <p>Här kan du lagra information om dina hästar!</p>
+
+<h2>Lägg till häst</h2>
+<!-- Formulär för att lägga till hästar -->
+<form id="horse-form">
+
+    <div class="form-box">
+        <label for="name">Namn:</label><br />
+        <input type="text" name="name" id="name"><br />
+    </div>
+
+    <div class="form-box">
+        <label for="nickname">Smeknamn:</label><br />
+        <input type="text" name="nickname" id="nickname">
+    </div>
+
+    <div class="form-box">
+        <label for="gender">Kön:</label><br />
+        <select name="gender" id="gender">
+            <option value="Sto">Sto</option>
+            <option value="Hingst">Hingst</option>
+            <option value="Valack">Valack</option>
+        </select><br />
+    </div>
+
+    <div class="form-box">
+        <label for="breed">Ras:</label><br />
+        <input type="text" name="breed" id="breed">
+    </div>
+
+    <div class="form-box">
+        <label for="level">Level:</label><br />
+        <input type="number" name="level" id="level">
+    </div>
+
+    <div class="form-box submit-btn">
+        <input type="submit" value="Lägg till">
+    </div>
+
+</form><br />
+
+<h2>Lagrade hästar</h2>
+<!-- Tabell för att skriva ut hästar -->
+<table id="horse-table">
+
+    <!-- Tabell header -->
+    <thead>
+        <tr>
+            <th>Nummer</th>
+            <th>Namn</th>
+            <th>Smeknamn</th>
+            <th>Kön</th>
+            <th>Ras</th>
+            <th>Level</th>
+        </tr>
+    </thead>
+
+    <!-- Skriva ut alla hästar -->
+    <tbody>
+
+    @foreach (var horse in Model)
+    {
+        <tr>
+            <td>@horse.Id</td>
+            <td>@horse.HorseName</td>
+            <td>@horse.HorseNickname</td>
+            <td>@horse.HorseGender</td>
+            <td>@horse.HorseBreed</td>
+            <td>@horse.HorseLevel</td>
+        </tr>
+    }
+
+    </tbody>
+
+</table>

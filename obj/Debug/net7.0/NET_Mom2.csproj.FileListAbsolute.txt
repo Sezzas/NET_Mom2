@@ -243,3 +243,4 @@ C:\Users\ebbah\Dropbox\WEBBUTVECKLING-PROGRAMMET\Kod\Webbutveckling med .NET\NET
 C:\Users\ebbah\Dropbox\WEBBUTVECKLING-PROGRAMMET\Kod\Webbutveckling med .NET\NET_Mom2\obj\Debug\net7.0\NET_Mom2.pdb
 C:\Users\ebbah\Dropbox\WEBBUTVECKLING-PROGRAMMET\Kod\Webbutveckling med .NET\NET_Mom2\obj\Debug\net7.0\NET_Mom2.genruntimeconfig.cache
 C:\Users\ebbah\Dropbox\WEBBUTVECKLING-PROGRAMMET\Kod\Webbutveckling med .NET\NET_Mom2\obj\Debug\net7.0\ref\NET_Mom2.dll
+C:\Users\ebbah\Dropbox\WEBBUTVECKLING-PROGRAMMET\Kod\Webbutveckling med .NET\NET_Mom2\bin\Debug\net7.0\horses.json
