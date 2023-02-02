@@ -1,4 +1,4 @@
-@model IEnumerable<NET_Mom2.Models.Horses> // Läsa in hästar
+@model NET_Mom2.Models.Horses; 
 @{
     ViewData["Title"] = "Dina hästar";
 }
@@ -9,21 +9,21 @@
 
 <h2>Lägg till häst</h2>
 <!-- Formulär för att lägga till hästar -->
-<form id="horse-form">
+<form method="post" id="horse-form">
 
     <div class="form-box">
-        <label for="name">Namn:</label><br />
-        <input type="text" name="name" id="name"><br />
+        <label asp-for="HorseName">Namn:</label><br />
+        <input type="text" name="HorseName" id="HorseName"><br />
     </div>
 
     <div class="form-box">
-        <label for="nickname">Smeknamn:</label><br />
-        <input type="text" name="nickname" id="nickname">
+        <label asp-for="HorseNickname">Smeknamn:</label><br />
+        <input type="text" name="HorseNickname" id="HorseNickname">
     </div>
 
     <div class="form-box">
-        <label for="gender">Kön:</label><br />
-        <select name="gender" id="gender">
+        <label asp-for="HorseGender">Kön:</label><br />
+        <select name="HorseGender" id="HorseGender">
             <option value="Sto">Sto</option>
             <option value="Hingst">Hingst</option>
             <option value="Valack">Valack</option>
@@ -31,13 +31,13 @@
     </div>
 
     <div class="form-box">
-        <label for="breed">Ras:</label><br />
-        <input type="text" name="breed" id="breed">
+        <label asp-for="HorseBreed">Ras:</label><br />
+        <input type="text" name="HorseBreed" id="HorseBreed">
     </div>
 
     <div class="form-box">
-        <label for="level">Level:</label><br />
-        <input type="number" name="level" id="level">
+        <label asp-for="HorseLevel">Level:</label><br />
+        <input type="number" name="HorseLevel" id="HorseLevel">
     </div>
 
     <div class="form-box submit-btn">
@@ -45,38 +45,3 @@
     </div>
 
 </form><br />
-
-<h2>Lagrade hästar</h2>
-<!-- Tabell för att skriva ut hästar -->
-<table id="horse-table">
-
-    <!-- Tabell header -->
-    <thead>
-        <tr>
-            <th>Nummer</th>
-            <th>Namn</th>
-            <th>Smeknamn</th>
-            <th>Kön</th>
-            <th>Ras</th>
-            <th>Level</th>
-        </tr>
-    </thead>
-
-    <!-- Skriva ut alla hästar -->
-    <tbody>
-
-    @foreach (var horse in Model)
-    {
-        <tr>
-            <td>@horse.Id</td>
-            <td>@horse.HorseName</td>
-            <td>@horse.HorseNickname</td>
-            <td>@horse.HorseGender</td>
-            <td>@horse.HorseBreed</td>
-            <td>@horse.HorseLevel</td>
-        </tr>
-    }
-
-    </tbody>
-
-</table>
