@@ -22,5 +22,61 @@
     "HorseGender": "Hingst",
     "HorseBreed": "Jorvikisk startponny",
     "HorseLevel": 15
+  },
+  {
+    "Id": 0,
+    "HorseName": "testar",
+    "HorseNickname": "testar",
+    "HorseGender": "Sto",
+    "HorseBreed": "testar",
+    "HorseLevel": 1
+  },
+  {
+    "Id": 0,
+    "HorseName": "testar",
+    "HorseNickname": "testar",
+    "HorseGender": "Sto",
+    "HorseBreed": "testar",
+    "HorseLevel": 1
+  },
+  {
+    "Id": 0,
+    "HorseName": "test",
+    "HorseNickname": "test",
+    "HorseGender": "Hingst",
+    "HorseBreed": "test",
+    "HorseLevel": 13
+  },
+  {
+    "Id": 0,
+    "HorseName": "test",
+    "HorseNickname": "test",
+    "HorseGender": "Hingst",
+    "HorseBreed": "test",
+    "HorseLevel": 13
+  },
+  {
+    "Id": 0,
+    "HorseName": "hej",
+    "HorseNickname": "hej",
+    "HorseGender": "Valack",
+    "HorseBreed": "hej",
+    "HorseLevel": 2
+  },
+  {
+    "Id": 0,
+    "HorseName": "hej",
+    "HorseNickname": "hej",
+    "HorseGender": "Valack",
+    "HorseBreed": "hej",
+    "HorseLevel": 2
+  },
+  {
+    "Id": 0,
+    "HorseName": "test",
+    "HorseNickname": "test",
+    "HorseGender": "Hingst",
+    "HorseBreed": "test",
+    "HorseLevel": 4
   }
 ]
