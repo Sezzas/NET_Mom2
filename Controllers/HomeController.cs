@@ -33,7 +33,7 @@ public class HomeController : Controller
         // Konvertera från JSON till objekt
         var jsonObj = JsonConvert.DeserializeObject<IEnumerable<Horses>>(jsonStr);
 
-        ViewBag.Horses = jsonObj;
+        ViewBag.Horses = jsonObj; // ViewBag för JSON-data
 
         return View();
     }
@@ -50,6 +50,8 @@ public class HomeController : Controller
             if(jsonObj != null) { // Kontrollerar att filen ej är tom
                 jsonObj.Add(model); // Lägger till häst
                 System.IO.File.WriteAllText("horses.json", JsonConvert.SerializeObject(jsonObj, Formatting.Indented)); // Formatterar om
+
+                ViewBag.Horses = jsonObj; // ViewBag för JSON-data
             }
         }
 
@@ -59,6 +61,8 @@ public class HomeController : Controller
     [Route("/anteckningar")]
     public IActionResult Notes()
     {
+        ViewData["Message"] = "Spara dina anteckningar här!"; // Skicka med data med ViewData
+
         return View();
     }
 

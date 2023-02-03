@@ -1,6 +1,5 @@
 [
   {
-    "Id": 1,
     "HorseName": "Moondew",
     "HorseNickname": "Dewie",
     "HorseGender": "Valack",
@@ -8,51 +7,38 @@
     "HorseLevel": 15
   },
   {
-    "Id": 0,
+    "HorseName": "Test",
+    "HorseNickname": null,
+    "HorseGender": "Sto",
+    "HorseBreed": "test",
+    "HorseLevel": 1
+  },
+  {
     "HorseName": "test",
     "HorseNickname": "test",
     "HorseGender": "Sto",
     "HorseBreed": "test",
-    "HorseLevel": 12
+    "HorseLevel": 5
   },
   {
-    "Id": 0,
-    "HorseName": "Peppermint",
-    "HorseNickname": null,
+    "HorseName": "test",
+    "HorseNickname": "test",
+    "HorseGender": "Sto",
+    "HorseBreed": "test",
+    "HorseLevel": 5
+  },
+  {
+    "HorseName": "hej",
+    "HorseNickname": "hej",
     "HorseGender": "Hingst",
-    "HorseBreed": "Jorvikisk startponny",
+    "HorseBreed": "hej",
     "HorseLevel": 15
   },
   {
-    "Id": 0,
-    "HorseName": "testar",
-    "HorseNickname": "testar",
-    "HorseGender": "Sto",
-    "HorseBreed": "testar",
-    "HorseLevel": 1
-  },
-  {
-    "Id": 0,
-    "HorseName": "testar",
-    "HorseNickname": "testar",
-    "HorseGender": "Sto",
-    "HorseBreed": "testar",
-    "HorseLevel": 1
-  },
-  {
-    "Id": 0,
-    "HorseName": "test",
-    "HorseNickname": "test",
+    "HorseName": "hej",
+    "HorseNickname": "hej",
     "HorseGender": "Hingst",
-    "HorseBreed": "test",
-    "HorseLevel": 13
-  },
-  {
-    "Id": 0,
-    "HorseName": "test",
-    "HorseNickname": "test",
-    "HorseGender": "Hingst",
-    "HorseBreed": "test",
-    "HorseLevel": 13
+    "HorseBreed": "hej",
+    "HorseLevel": 15
   }
 ]
