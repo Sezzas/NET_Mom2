@@ -14,5 +14,13 @@
     "HorseGender": "Sto",
     "HorseBreed": "test",
     "HorseLevel": 12
+  },
+  {
+    "Id": 0,
+    "HorseName": "Peppermint",
+    "HorseNickname": null,
+    "HorseGender": "Hingst",
+    "HorseBreed": "Jorvikisk startponny",
+    "HorseLevel": 15
   }
 ]

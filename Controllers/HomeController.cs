@@ -28,12 +28,12 @@ public class HomeController : Controller
     [Route("/dinahästar")]
     public IActionResult Horses()
     {
-        /* // Läsa in JSON-fil
+        // Läsa in JSON-fil
         var jsonStr = System.IO.File.ReadAllText("horses.json");
         // Konvertera från JSON till objekt
         var jsonObj = JsonConvert.DeserializeObject<IEnumerable<Horses>>(jsonStr);
 
-        return View(jsonObj); */
+        ViewBag.Horses = jsonObj;
 
         return View();
     }
@@ -61,7 +61,6 @@ public class HomeController : Controller
     {
         return View();
     }
-
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

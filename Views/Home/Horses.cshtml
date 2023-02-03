@@ -1,6 +1,9 @@
-@model NET_Mom2.Models.Horses; 
+@using NET_Mom2.Models
+@model NET_Mom2.Models.Horses;
 @{
     ViewData["Title"] = "Dina hästar";
+
+    var data = ViewBag.Horses; // Lista på hästar
 }
 
 <h2>Dina hästar</h2>
@@ -45,3 +48,38 @@
     </div>
 
 </form><br />
+
+<h2>Lagrade hästar</h2>
+<!-- Tabell för att skriva ut hästar -->
+<table id="horse-table">
+
+    <!-- Tabell header -->
+    <thead>
+        <tr>
+            <th>Nummer</th>
+            <th>Namn</th>
+            <th>Smeknamn</th>
+            <th>Kön</th>
+            <th>Ras</th>
+            <th>Level</th>
+        </tr>
+    </thead>
+
+    <!-- Skriva ut alla hästar -->
+    <tbody>
+
+    @foreach (var horse in data)
+    {
+        <tr>
+            <td>@horse.Id</td>
+            <td>@horse.HorseName</td>
+            <td>@horse.HorseNickname</td>
+            <td>@horse.HorseGender</td>
+            <td>@horse.HorseBreed</td>
+            <td>@horse.HorseLevel</td>
+        </tr>
+    }
+
+    </tbody>
+
+</table>
