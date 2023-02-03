@@ -1,3 +1,4 @@
+@model IEnumerable<NET_Mom2.Models.Notes>
 @{
     ViewData["Title"] = "Anteckningar";
 }
@@ -5,3 +6,9 @@
 <h2>Anteckningar</h2>
 
 <p>@ViewData["Message"]</p> <!-- Data medskickat med ViewData -->
+
+@foreach (var note in Model)
+{
+    <h3>@note.NoteTitle</h3> // Titel
+    <p>@note.NoteBody</p> // Anteckning
+}

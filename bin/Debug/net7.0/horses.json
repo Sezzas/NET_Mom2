@@ -5,40 +5,5 @@
     "HorseGender": "Valack",
     "HorseBreed": "Jorvikiskt Varmblod",
     "HorseLevel": 15
-  },
-  {
-    "HorseName": "Test",
-    "HorseNickname": null,
-    "HorseGender": "Sto",
-    "HorseBreed": "test",
-    "HorseLevel": 1
-  },
-  {
-    "HorseName": "test",
-    "HorseNickname": "test",
-    "HorseGender": "Sto",
-    "HorseBreed": "test",
-    "HorseLevel": 5
-  },
-  {
-    "HorseName": "test",
-    "HorseNickname": "test",
-    "HorseGender": "Sto",
-    "HorseBreed": "test",
-    "HorseLevel": 5
-  },
-  {
-    "HorseName": "hej",
-    "HorseNickname": "hej",
-    "HorseGender": "Hingst",
-    "HorseBreed": "hej",
-    "HorseLevel": 15
-  },
-  {
-    "HorseName": "hej",
-    "HorseNickname": "hej",
-    "HorseGender": "Hingst",
-    "HorseBreed": "hej",
-    "HorseLevel": 15
   }
 ]

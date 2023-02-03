@@ -63,7 +63,12 @@ public class HomeController : Controller
     {
         ViewData["Message"] = "Spara dina anteckningar här!"; // Skicka med data med ViewData
 
-        return View();
+        // Läsa in JSON-fil
+        var jsonStr = System.IO.File.ReadAllText("notes.json");
+        // Konvertera från JSON till objekt
+        var jsonObj = JsonConvert.DeserializeObject<IEnumerable<Notes>>(jsonStr);
+
+        return View(jsonObj);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
