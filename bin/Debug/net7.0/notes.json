@@ -3,5 +3,10 @@
         "Id": 1,
         "NoteTitle": "En titel",
         "NoteBody": "Anteckningar..."
+    },
+    {
+        "Id": 2,
+        "NoteTitle": "Titel 2",
+        "NoteBody": "Mer anteckningar..."
     }
 ]

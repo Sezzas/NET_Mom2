@@ -137,6 +137,10 @@ footer {
   border-collapse: collapse;
 }
 
+table {
+  width: 100%;
+}
+
 th, td {
   border-bottom: 1px #3f3d3c solid;
 }
@@ -182,4 +186,15 @@ input[type=submit] {
 
 .submit-btn {
   align-self: flex-end;
+}
+
+@media (max-width: 600px) {
+
+  nav {
+    flex-direction: column;
+  }
+
+  table {
+    font-size: 0.7em;
+  }
 }
