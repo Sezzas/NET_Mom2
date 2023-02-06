@@ -68,7 +68,7 @@ public class HomeController : Controller
         // Konvertera från JSON till objekt
         var jsonObj = JsonConvert.DeserializeObject<IEnumerable<Notes>>(jsonStr);
 
-        return View(jsonObj);
+        return View(jsonObj); // JSON-data skickas med till vyn
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
