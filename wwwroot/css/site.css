@@ -188,6 +188,15 @@ input[type=submit] {
   align-self: flex-end;
 }
 
+.validation-msg {
+  font-size: 0.7em;
+  color: rgb(201, 31, 31);
+  font-weight: bold;
+  font-style: italic;
+  align-self: flex-end;
+}
+
+/* För mobila enheter */
 @media (max-width: 600px) {
 
   nav {

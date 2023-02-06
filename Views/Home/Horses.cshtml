@@ -14,19 +14,21 @@
 <!-- Formulär för att lägga till hästar -->
 <form method="post" id="horse-form">
 
+    <div asp-validation-summary="ModelOnly"></div>
+
     <div class="form-box">
         <label asp-for="HorseName">Namn:</label><br />
-        <input type="text" name="HorseName" id="HorseName"><br />
+        <input asp-for="HorseName"><br />
     </div>
 
     <div class="form-box">
         <label asp-for="HorseNickname">Smeknamn:</label><br />
-        <input type="text" name="HorseNickname" id="HorseNickname">
+        <input asp-for="HorseNickname">
     </div>
 
     <div class="form-box">
         <label asp-for="HorseGender">Kön:</label><br />
-        <select name="HorseGender" id="HorseGender">
+        <select asp-for="HorseGender">
             <option value="Sto">Sto</option>
             <option value="Hingst">Hingst</option>
             <option value="Valack">Valack</option>
@@ -35,16 +37,22 @@
 
     <div class="form-box">
         <label asp-for="HorseBreed">Ras:</label><br />
-        <input type="text" name="HorseBreed" id="HorseBreed">
+        <input asp-for="HorseBreed">
     </div>
 
     <div class="form-box">
         <label asp-for="HorseLevel">Level:</label><br />
-        <input type="number" name="HorseLevel" id="HorseLevel">
+        <input asp-for="HorseLevel">
     </div>
 
     <div class="form-box submit-btn">
         <input type="submit" value="Lägg till">
+    </div>
+
+    <div class="validation-msg">
+        <span asp-validation-for="HorseName"></span><br/>
+        <span asp-validation-for="HorseBreed"></span><br/>
+        <span asp-validation-for="HorseLevel"></span><br/>
     </div>
 
 </form><br />

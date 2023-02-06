@@ -1,9 +1,18 @@
 [
   {
+    "Id": 0,
     "HorseName": "Moondew",
     "HorseNickname": "Dewie",
     "HorseGender": "Valack",
     "HorseBreed": "Jorvikiskt Varmblod",
     "HorseLevel": 15
+  },
+  {
+    "Id": 0,
+    "HorseName": "Test",
+    "HorseNickname": "Test",
+    "HorseGender": "Sto",
+    "HorseBreed": "Test",
+    "HorseLevel": 1
   }
 ]

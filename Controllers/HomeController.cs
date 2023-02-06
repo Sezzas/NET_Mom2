@@ -52,7 +52,17 @@ public class HomeController : Controller
                 System.IO.File.WriteAllText("horses.json", JsonConvert.SerializeObject(jsonObj, Formatting.Indented)); // Formatterar om
 
                 ViewBag.Horses = jsonObj; // ViewBag för JSON-data
+
+                ModelState.Clear(); // Rensa formulär
             }
+        } else {
+
+            // Läsa in JSON-fil
+            var jsonStr = System.IO.File.ReadAllText("horses.json");
+            // Konvertera från JSON till objekt
+            var jsonObj = JsonConvert.DeserializeObject<IEnumerable<Horses>>(jsonStr);
+
+            ViewBag.Horses = jsonObj; // ViewBag för JSON-data
         }
 
         return View();
